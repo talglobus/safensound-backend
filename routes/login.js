@@ -9,7 +9,7 @@ let router = express.Router();
 
 /* GET login page */
 router.get('/', function(req, res, next) {
-	res.render('login', { title: 'Express', imports: fs.readFileSync(path.join(__dirname, "../config/imports.txt")) });
+	res.render('login', { title: 'SAFE·n·SOUND | Login', imports: fs.readFileSync(path.join(__dirname, "../config/imports.txt")) });
 });
 
 /* POST login attempt */
