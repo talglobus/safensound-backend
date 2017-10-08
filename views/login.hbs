@@ -29,15 +29,62 @@
 	</nav>
 
 	<header id="gtco-header" class="gtco-cover" role="banner" style="-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);background-image:url(images/imgbgblurred.jpg);">
+	filter: grayscale(100%); background-color: #008ae6">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>SAFEnSOUND</h1>
-							<h2 style="text-transform: none">Using the power of people to protect them</h2>
-							<p><a href="#" class="btn btn-default">Get Started</a></p>
+                            <section id="login">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="form-wrap">
+                                                <h1>Log in with your email account</h1>
+                                                <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+                                                    <div class="form-group">
+                                                        <label for="email" class="sr-only">Email</label>
+                                                        <input type="email" name="email" id="email" class="form-control" placeholder="somebody@example.com">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="key" class="sr-only">Password</label>
+                                                        <input type="password" name="key" id="key" class="form-control" placeholder="Password">
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <span class="character-checkbox" onclick="showPassword()"></span>
+                                                        <span class="label">Show password</span>
+                                                    </div>
+                                                    <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
+                                                </form>
+                                                <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
+                                                <hr>
+                                            </div>
+                                        </div> <!-- /.col-xs-12 -->
+                                    </div> <!-- /.row -->
+                                </div> <!-- /.container -->
+                            </section>
+
+                            <div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">×</span>
+                                                <span class="sr-only">Close</span>
+                                            </button>
+                                            <h4 class="modal-title">Recovery password</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Type your email account</p>
+                                            <input type="email" name="recovery-email" id="recovery-email" class="form-control" autocomplete="off">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-custom">Recovery</button>
+                                        </div>
+                                    </div> <!-- /.modal-content -->
+                                </div> <!-- /.modal-dialog -->
+                            </div> <!-- /.modal -->
 						</div>
 					</div>
 				</div>
@@ -45,7 +92,7 @@
 		</div>
 	</header>
 
-	<div id="gtco-features">
+	<!--<div id="gtco-features">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-4 col-sm-4">
@@ -216,7 +263,7 @@
 								class="hidden-xs">Beacon</span></a></li>
 					</ul>
 
-					<!-- Tabs -->
+					&lt;!&ndash; Tabs &ndash;&gt;
 					<div class="gtco-tab-content-wrap">
 
 						<div class="gtco-tab-content tab-content active" data-tab-content="1">
@@ -235,13 +282,13 @@
                                     contribution will help improve our precision in locating threats, and more importantly
                                     generate a safer, more welcoming world.</p>
 
-								<!-- <p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci
+								&lt;!&ndash; <p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci
 									dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo
 									reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
 
 								<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat
 									soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga
-									molestiae asperiores obcaecati corporis sint illo facilis.</p> -->
+									molestiae asperiores obcaecati corporis sint illo facilis.</p> &ndash;&gt;
 
 								<div class="row">
 									<div class="col-md-6">
@@ -383,7 +430,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<footer id="gtco-footer" role="contentinfo">
 		<div class="gtco-container">
