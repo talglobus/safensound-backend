@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/platform', platform);
-app.use('/api', api);
+app.use('/api/v1', api);
 
 
 // catch 404 and forward to error handler
