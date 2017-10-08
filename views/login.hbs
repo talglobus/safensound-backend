@@ -11,16 +11,16 @@
 					<ul>
 						<li class="active"><a href="/">Home</a></li>
 						<li><a href="/#gtco-features">Features</a></li>
-						<li><a href="/#gtco-features-2">Qualifications</a></li>
-						<li><a href="/#gtco-counter">Statistics</a></li>
-						<li><a href="/#gtco-services">Your Role</a></li>
+						<li><a href="/#gtco-features-2">Purpose</a></li>
+						<li><a href="/#gtco-counter">Facts</a></li>
+						<li><a href="/#gtco-services">You</a></li>
 						<li><a href="/#gtco-started">Sign up</a></li>
-						<li><a href="/">Contact</a></li>
+						<li><a href="/">Contact Us</a></li>
 					</ul>
 				</div>
 				<div class="col-xs-2 text-right hidden-xs menu-2">
 					<ul>
-						<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+						<li class="btn-cta"><a href="/login"><span>Login</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -29,408 +29,29 @@
 	</nav>
 
 	<header id="gtco-header" class="gtco-cover" role="banner" style="-webkit-filter: grayscale(100%);
-	filter: grayscale(100%); background-color: #008ae6">
+	filter: grayscale(100%); background-image:url(/images/imgbgblurred.jpg);">
 		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-                            <section id="login">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <div class="form-wrap">
-                                                <h1>Log in with your email account</h1>
-                                                <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
-                                                    <div class="form-group">
-                                                        <label for="email" class="sr-only">Email</label>
-                                                        <input type="email" name="email" id="email" class="form-control" placeholder="somebody@example.com">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="key" class="sr-only">Password</label>
-                                                        <input type="password" name="key" id="key" class="form-control" placeholder="Password">
-                                                    </div>
-                                                    <div class="checkbox">
-                                                        <span class="character-checkbox" onclick="showPassword()"></span>
-                                                        <span class="label">Show password</span>
-                                                    </div>
-                                                    <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Log in">
-                                                </form>
-                                                <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Forgot your password?</a>
-                                                <hr>
-                                            </div>
-                                        </div> <!-- /.col-xs-12 -->
-                                    </div> <!-- /.row -->
-                                </div> <!-- /.container -->
-                            </section>
-
-                            <div class="modal fade forget-modal" tabindex="-1" role="dialog" aria-labelledby="myForgetModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">
-                                                <span aria-hidden="true">×</span>
-                                                <span class="sr-only">Close</span>
-                                            </button>
-                                            <h4 class="modal-title">Recovery password</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>Type your email account</p>
-                                            <input type="email" name="recovery-email" id="recovery-email" class="form-control" autocomplete="off">
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                            <button type="button" class="btn btn-custom">Recovery</button>
-                                        </div>
-                                    </div> <!-- /.modal-content -->
-                                </div> <!-- /.modal-dialog -->
-                            </div> <!-- /.modal -->
-						</div>
-					</div>
-				</div>
-			</div>
+            <form action="/login" method="post" style="margin-top: 200px; background-color: #FFFFFF; padding: 30px;
+            width: 50%; margin-left: 250px; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, .5);">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" name="user" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Check me out
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
 		</div>
 	</header>
-
-	<!--<div id="gtco-features">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="icon-eye"></i>
-						</span>
-						<h3>Watchful Waiting</h3>
-						<p>Keeping track of potential threats, and only ever getting in your way when they turn real.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="fa fa-map-marker"></i>
-						</span>
-						<h3>Immediately Responsive</h3>
-						<p>Sends out alerts within seconds of identifying and locating threats, so you always stay safe.</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<div class="feature-center animate-box" data-animate-effect="fadeIn">
-						<span class="icon">
-							<i class="fa fa-mobile"></i>
-						</span>
-						<h3>Hands-free? Try phone-free</h3>
-						<p>Compatible with Android, iOS and IoT beacons. With no one near the tree, you still hear the sound.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="gtco-features-2">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Why Choose Us</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident.
-						Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Retina Ready</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque
-								dicta adipisci architecto culpa amet.</p>
-						</div>
-					</div>
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Fully Responsive</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque
-								dicta adipisci architecto culpa amet.</p>
-						</div>
-					</div>
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-check"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Ready To Use</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque
-								dicta adipisci architecto culpa amet.</p>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="col-md-6">
-					<div class="gtco-video gtco-bg" style="background-image: url(images/img_1.jpg); ">
-						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i
-								class="icon-video2"></i></a>
-						<div class="overlay"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="gtco-counter" class="gtco-bg gtco-counter" style="background-image:url(images/img_bg_2.jpg);">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-eye"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="372" data-speed="5000"
-									  data-refresh-interval="50">1</span>
-								<span class="counter-label">Mass Shootings in 2015</span>
-
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-anchor"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="1870" data-speed="5000"
-									  data-refresh-interval="50">1</span>
-								<span class="counter-label">Killed or Injured</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-briefcase"></i>
-								</span>
-								<span class="counter js-counter" data-from="0" data-to="264" data-speed="5000"
-									  data-refresh-interval="50">1</span>
-								<span class="counter-label">Shootings in Schools</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-clock"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="300" data-speed="5000"
-									  data-refresh-interval="50">1</span>
-								<span class="counter-label">Million Guns in the US</span>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="gtco-services">
-		<div class="gtco-container">
-
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Help Us Out</h2>
-					<p>Our platform relies on people just like you contributing data across the planet, keeping everyone everywhere safe and sound.</p>
-				</div>
-			</div>
-
-			<div class="row animate-box">
-
-				<div class="gtco-tabs">
-					<ul class="gtco-tab-nav">
-						<li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i
-								class="fa fa-android"></i></span><span class="hidden-xs">Android</span></a></li>
-						<li><a href="#" data-tab="2"><span class="icon visible-xs"><i class="fa fa-apple"></i></span><span
-								class="hidden-xs">iOS</span></a></li>
-						<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="fa fa-chrome"></i></span><span
-								class="hidden-xs">Browser</span></a></li>
-						<li><a href="#" data-tab="4"><span class="icon visible-xs"><i class="fa fa-wifi"></i></span><span
-								class="hidden-xs">Beacon</span></a></li>
-					</ul>
-
-					&lt;!&ndash; Tabs &ndash;&gt;
-					<div class="gtco-tab-content-wrap">
-
-						<div class="gtco-tab-content tab-content active" data-tab-content="1">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="fa fa-android"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>Android</h2>
-								<p>Use our Android app to get access to the latest alerts in your area. In the background,
-									you'll be contributing the source data we rely on to detect threat conditions and
-									locate them before you become the next victim. We'll let you know if you can help.</p>
-
-								<p>You're only a click away. Just think of the many lives you'll be saving. Your
-                                    contribution will help improve our precision in locating threats, and more importantly
-                                    generate a safer, more welcoming world.</p>
-
-								&lt;!&ndash; <p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci
-									dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo
-									reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
-
-								<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat
-									soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga
-									molestiae asperiores obcaecati corporis sint illo facilis.</p> &ndash;&gt;
-
-								<div class="row">
-									<div class="col-md-6">
-										<h2 class="uppercase">Keep it simple</h2>
-										<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
-									</div>
-									<div class="col-md-6">
-										<h2 class="uppercase">Less is more</h2>
-										<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="gtco-tab-content tab-content" data-tab-content="2">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="fa fa-apple"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>iOS</h2>
-								<p>By using our iOS app, you'll be able to receive notifications of nearby threats and
-                                    the best possible routs of evacuating the premice under attack. Moreover, not only
-                                    will you be helping yourself, but you'll also be saving others by keeping dangers
-                                    under check..</p>
-
-								<p>The more of you that join, the better. As our customer count grows larger, our data
-                                    tracking precision becomes much more accurate. Protect yourself and others by
-                                    installing our app.</p>
-
-								<div class="row">
-									<div class="col-md-6">
-										<h2 class="uppercase">Ready to use</h2>
-										<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
-									</div>
-									<div class="col-md-6">
-										<h2 class="uppercase">100% Satisfaction</h2>
-										<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="gtco-tab-content tab-content" data-tab-content="3">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="fa fa-chrome"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>e-Commerce</h2>
-								<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat
-									soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga
-									molestiae asperiores obcaecati corporis sint illo facilis.</p>
-
-								<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci
-									dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo
-									reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
-								<div class="row">
-									<div class="col-md-6">
-										<h2 class="uppercase">Easy to shop</h2>
-										<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
-									</div>
-									<div class="col-md-6">
-										<h2 class="uppercase">No credit card required</h2>
-										<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="gtco-tab-content tab-content" data-tab-content="4">
-							<div class="col-md-6">
-								<div class="icon icon-xlg">
-									<i class="fa fa-wifi"></i>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>Logo &amp; Branding</h2>
-								<p>Paragraph placeat quis fugiat provident veritatis quia iure a debitis adipisci
-									dignissimos consectetur magni quas eius nobis reprehenderit soluta eligendi quo
-									reiciendis fugit? Veritatis tenetur odio delectus quibusdam officiis est.</p>
-
-								<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis molestias totam fugiat
-									soluta accusantium omnis quod similique placeat at. Dolorum ducimus libero fuga
-									molestiae asperiores obcaecati corporis sint illo facilis.</p>
-
-								<div class="row">
-									<div class="col-md-6">
-										<h2 class="uppercase">Pixel perfect</h2>
-										<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
-									</div>
-									<div class="col-md-6">
-										<h2 class="uppercase">User Interface Expert</h2>
-										<p>Ullam dolorum iure dolore dicta fuga ipsa velit veritatis</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div id="gtco-started">
-		<div class="gtco-container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Get Started</h2>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-12">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="password" class="sr-only">Password</label>
-								<input type="password" class="form-control" id="password" placeholder="Password">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">Sign Up</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>-->
 
 	<footer id="gtco-footer" role="contentinfo">
 		<div class="gtco-container">
