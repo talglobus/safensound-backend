@@ -1,8 +1,18 @@
 let express = require('express');
+let MongoClient = require('mongodb').MongoClient;
+let credentials = require('../config/mongo-credentials');
 let router = express.Router();
+let db = null;
+
+MongoClient.connect(credentials.url, (err, newDB) => {
+	if (err) throw err;
+	db = newDB;
+});
 
 /* Send data into the API */
-router.post('/send', function(req, res, next) {
+router.post('/send', (req, res, next) => {
+	if (!db) res.status(500).json({"error": "database not loaded"});
+
 	res.json({
 		"status": "ok",
 		"accepted": true
@@ -11,6 +21,8 @@ router.post('/send', function(req, res, next) {
 
 /* Retrieve data from the API */
 router.get('/receive', function(req, res, next) {
+	if (!db) res.status(500).json({"error": "database not loaded"});
+
 	let location = {
 		x: req.param('longitude'),
 		y: req.param('latitude')
